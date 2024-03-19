@@ -78,7 +78,7 @@
     [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         [[self blurView] setAlpha:1];
     } completion:^(BOOL finished) {
-        if (![[NSFileManager defaultManager] fileExistsAtPath:@"/Library/MobileSubstrate/DynamicLibraries/shuffle.dylib"])
+        if (![[NSFileManager defaultManager] fileExistsAtPath:@"/var/jb/Library/MobileSubstrate/DynamicLibraries/shuffle.dylib"])
             [HBRespringController respringAndReturnTo:[NSURL URLWithString:@"prefs:root=Diary"]];
         else
             [HBRespringController respringAndReturnTo:[NSURL URLWithString:@"prefs:root=Tweaks&path=Diary"]];

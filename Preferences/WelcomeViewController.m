@@ -8,7 +8,7 @@
     [[self view] setBackgroundColor:[UIColor systemBackgroundColor]];
 
 
-    NSData* inData = [NSData dataWithContentsOfURL:[NSURL fileURLWithPath:@"/Library/PreferenceBundles/DiaryPreferences.bundle/welcome/Circle Of Love.ttf"]];
+    NSData* inData = [NSData dataWithContentsOfURL:[NSURL fileURLWithPath:@"/var/jb/Library/PreferenceBundles/DiaryPreferences.bundle/welcome/Circle Of Love.ttf"]];
     CFErrorRef error;
     CGDataProviderRef provider = CGDataProviderCreateWithCFData((CFDataRef)inData);
     CGFontRef font = CGFontCreateWithDataProvider(provider);
@@ -23,7 +23,7 @@
     // header
     self.headerImageView = [UIImageView new];
     [[self headerImageView] setContentMode:UIViewContentModeScaleAspectFill];
-    [[self headerImageView] setImage:[UIImage imageWithContentsOfFile:@"/Library/PreferenceBundles/DiaryPreferences.bundle/welcome/header.png"]];
+    [[self headerImageView] setImage:[UIImage imageWithContentsOfFile:@"/var/jb/Library/PreferenceBundles/DiaryPreferences.bundle/welcome/header.png"]];
     [[self view] addSubview:[self headerImageView]];
 
     [[self headerImageView] setTranslatesAutoresizingMaskIntoConstraints:NO];
@@ -90,7 +90,7 @@
     self.twitterCellIcon = [UIButton new];
     [[self twitterCellIcon] addTarget:self action:@selector(openTwitterURL) forControlEvents:UIControlEventTouchUpInside];
     [[self twitterCellIcon] setContentMode:UIViewContentModeScaleAspectFill];
-    [[self twitterCellIcon] setImage:[UIImage imageWithContentsOfFile:@"/Library/PreferenceBundles/DiaryPreferences.bundle/welcome/twitter.png"] forState:UIControlStateNormal];
+    [[self twitterCellIcon] setImage:[UIImage imageWithContentsOfFile:@"/var/jb/Library/PreferenceBundles/DiaryPreferences.bundle/welcome/twitter.png"] forState:UIControlStateNormal];
     [[self twitterCellIcon] setClipsToBounds:YES];
     [[[self twitterCellIcon] layer] setCornerRadius:10];
     [[[self twitterCellIcon] layer] setBorderColor:[[UIColor colorWithRed:0.93 green:0.76 blue:1 alpha:1] CGColor]];
@@ -142,7 +142,7 @@
     self.githubCellIcon = [UIButton new];
     [[self githubCellIcon] addTarget:self action:@selector(openGitHubURL) forControlEvents:UIControlEventTouchUpInside];
     [[self githubCellIcon] setContentMode:UIViewContentModeScaleAspectFill];
-    [[self githubCellIcon] setImage:[UIImage imageWithContentsOfFile:@"/Library/PreferenceBundles/DiaryPreferences.bundle/welcome/github.png"] forState:UIControlStateNormal];
+    [[self githubCellIcon] setImage:[UIImage imageWithContentsOfFile:@"/var/jb/Library/PreferenceBundles/DiaryPreferences.bundle/welcome/github.png"] forState:UIControlStateNormal];
     [[self githubCellIcon] setClipsToBounds:YES];
     [[[self githubCellIcon] layer] setCornerRadius:10];
     [[[self githubCellIcon] layer] setBorderColor:[[UIColor colorWithRed:0.84 green:0.89 blue:1 alpha:1] CGColor]];
@@ -194,7 +194,7 @@
     self.discordCellIcon = [UIButton new];
     [[self discordCellIcon] addTarget:self action:@selector(openDiscordURL) forControlEvents:UIControlEventTouchUpInside];
     [[self discordCellIcon] setContentMode:UIViewContentModeScaleAspectFill];
-    [[self discordCellIcon] setImage:[UIImage imageWithContentsOfFile:@"/Library/PreferenceBundles/DiaryPreferences.bundle/welcome/discord.png"] forState:UIControlStateNormal];
+    [[self discordCellIcon] setImage:[UIImage imageWithContentsOfFile:@"/var/jb/Library/PreferenceBundles/DiaryPreferences.bundle/welcome/discord.png"] forState:UIControlStateNormal];
     [[self discordCellIcon] setClipsToBounds:YES];
     [[[self discordCellIcon] layer] setCornerRadius:10];
     [[[self discordCellIcon] layer] setBorderColor:[[UIColor colorWithRed:0.58 green:0.66 blue:0.71 alpha:1] CGColor]];

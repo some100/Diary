@@ -1,7 +1,7 @@
 // made by https://twitter.com/tomt000
 
 #import "DRYLocalization.h"
-#define kBundlePath @"/Library/PreferenceBundles/DiaryPreferences.bundle/localization/"
+#define kBundlePath @"/var/jb/Library/PreferenceBundles/DiaryPreferences.bundle/localization/"
 
 @interface DRYLocalization ()
 @end
